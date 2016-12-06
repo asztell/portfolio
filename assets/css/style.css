@@ -110,8 +110,8 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
+	background-position: center top;
+	min-height: 850px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -171,13 +171,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #workwrap {	
-	background: url(../img/dev_desk1.jpg) no-repeat center top;
+	background: url(../img/work.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 850px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -202,12 +202,17 @@ h1, h2, h3, h4, h5, h6 {
 
 #workwrap h4 {
 	font-weight: 400;
-	color: #ffffff
+	color: #ffffff;
+}
+
+#testLoad iframe {
+	width: 930px;
+	height: 600px;
 }
 
 #aboutwrap {
 	/*background: url(../img/about.jpg) no-repeat center top;*/
-	background: url(../img/folio_collage.jpg) no-repeat center top;
+	background: url('../img/folio_collage.jpg') no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
