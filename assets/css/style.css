@@ -140,8 +140,32 @@ ul {
 	background-color: transparent;
 }
 
+::-webkit-input-placeholder {
+   color: white !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white !important;
+}
+
+:-ms-input-placeholder {  
+   color: white !important;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+   color: white;
+}
+
+::placeholder {
+	color: white;
+}
+
 #section_header {
-	color: #c8c8c8;
+	color: #f46e42;
 	text-align: center;
 	margin-bottom: 50px;
 }
