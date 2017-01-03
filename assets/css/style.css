@@ -12,7 +12,7 @@
    Base Styles, Bootstrap Modifications & Fonts Import
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 
 ::-moz-selection {
@@ -61,16 +61,32 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
-
+	background: url('../img/work.jpg') no-repeat center center;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-}
+   -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
     color: #4a4a4a;
 }
 
+ul {
+	list-style-type: circle;
+	color: white;
+}
 
 .navbar-brand {
 	font-weight: 700;
@@ -102,18 +118,58 @@ h1, h2, h3, h4, h5, h6 {
    Wrap Sections
    ========================================================================== */
 
+#about h1 {
+	font-size: 70px;
+	color: #ddd;
+	padding-top: 150px;
+}
+
+#about h3 {
+	color: #fff;
+}
+
+#about {
+	background: none;
+	/* margin-top: -220px; */
+	/* height: 100vh; */
+}
+
+#contact {
+	/* height: 100vh; */
+	margin-top: 200px;
+	background-color: transparent;
+}
+
+#section_header {
+	color: #c8c8c8;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#contact #submit,
+#contact textarea,
+#contact input {
+	/* background-color: #c8c8c8; */
+	/* opacity: .5; */
+	color: white;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.6);
+    border: none;
+}
+
 #headerwrap {
 /*	background: url(../img/back.jpg) no-repeat center top;*/
-	background: url(../img/mountain_small-village_lake.jpg) no-repeat center top;
+	/* background: url('../img/mountain_small-village_lake.jpg') no-repeat center top; */
 	/*background: url(../img/ws_Monochrome_Nature_1920x1200.jpg) no-repeat center top;*/
-	margin-top: -70px;
-	padding-top: 250px;
+	margin-top: 0px;
+	padding-top: 100px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center top;
-	min-height: 850px;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 400px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -126,8 +182,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #headerwrap h1 {
-	color:#ffffff;
-	padding-top: 10px;
+	color: #c8c8c8;
+	/* padding-top: 10px; */
 	padding-bottom: 20px;
 	letter-spacing: 4px;
 	font-size: 80px;
@@ -145,24 +201,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #social {
+	margin-top: 150px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #f2f2f2;
+	background-color: transparent;
 }
 
 #social i {
 	font-size: 40px;
-	color: #4a4a4a
+	color: #c8c8c8;
 }
 
 #social i:hover {
-	color: #1abc9c
+	color: #1abc9c;
 }
 
 #footerwrap {
 	padding-top: 70px;
 	padding-bottom: 50px;
-	background-color: #2f2f2f;
+	/* background-color: #2f2f2f; */
+	background-color: transparent;
 }
 
 #footerwrap p {
@@ -170,13 +228,22 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 10px;
 }
 
+#footerwrap h4 {
+	color: #c8c8c8;
+}
+
+#r_pod {
+	color: #0fc;
+}
+
 #workwrap {	
-	background: url(../img/work.jpg) no-repeat center top;
+	/* background: url('../img/work.jpg') no-repeat center top; */
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
-	background-attachment: relative;
+	background-attachment: fixed;
 	background-position: center center;
+	background-repeat: no-repeat;
 	min-height: 850px;
 	width: 100%;
 	
@@ -205,31 +272,31 @@ h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
 }
 
-#testLoad iframe {
+.websites iframe {
 	width: 930px;
 	height: 600px;
 }
 
 #aboutwrap {
 	/*background: url(../img/about.jpg) no-repeat center top;*/
-	background: url('../img/folio_collage.jpg') no-repeat center top;
+	/* background: url('../img/folio_collage.jpg') no-repeat center top; */
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 550px;
-	width: 100%;
+	/* background-attachment: relative; */
+	/* background-position: center center; */
+	/* min-height: 550px; */
+	/* width: 100%; */
 	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    /* -webkit-background-size: 100%; */
+    /* -moz-background-size: 100%; */
+    /* -o-background-size: 100%; */
+    /* background-size: 100%; */
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
 }
 
 #contactwrap {
